@@ -5,6 +5,7 @@ lab:
     duration: 30
     level: 300
     islab: true
+    status: 'released'
 ---
 
 # Recognize and synthesize speech
@@ -49,6 +50,8 @@ Microsoft Foundry uses projects to organize models, resources, data, and other a
     - **Subscription**: *Your Azure subscription*
     - **Resource group**: *Create or select a resource group*
     - **Region**: Select any available region
+
+    > **Note**: Use a recommended Microsoft Foundry region. Model availability may vary by region.
 
     > **TIP**: \* Remember the Foundry resource name - you'll need it later!
 

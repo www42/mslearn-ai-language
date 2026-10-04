@@ -5,6 +5,7 @@ lab:
     level: 300
     duration: 30
     islab: true
+    status: 'released'
 ---
 
 # Develop a Voice Live agent
@@ -41,6 +42,8 @@ Microsoft Foundry uses projects to organize models, resources, data, and other a
     - **Resource group**: *Create or select a resource group*
     - **Region**: Select any available region
 
+    > **Note**: Use a recommended Microsoft Foundry region. Model and feature availability may vary by region.
+
 1. Select **Create**. Wait for your project to be created. Then view its home page.
 
 ## Create an agent
@@ -51,7 +54,7 @@ Now let's create an agent.
 
      When ready, your agent opens in the agent playground.
 
-1. In the model drop-down list, ensure that a **gpt-4.1** model has been deployed and selected for your agent.
+1. In the model drop-down list, ensure that a **gpt-5** model has been deployed and selected for your agent.
 1. Assign your agent the following **Instructions**:
 
     ```
@@ -162,7 +165,8 @@ To use your agent in a custom application, you need to write code that uses the 
         ServerEventType,
         AudioNoiseReduction,
         AudioEchoCancellation,
-        AzureSemanticVadMultilingual
+        AzureSemanticVadMultilingual,
+        AgentConfig
    ) 
     ```
 

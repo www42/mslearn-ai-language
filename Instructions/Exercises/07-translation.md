@@ -5,6 +5,7 @@ lab:
     duration: 30
     level: 300
     islab: true
+    status: 'released'
 ---
 
 # Translate text and speech
@@ -47,6 +48,8 @@ Microsoft Foundry uses projects to organize models, resources, data, and other a
     - **Subscription**: *Your Azure subscription*
     - **Resource group**: *Create or select a resource group*
     - **Region**: Select any available region
+
+    > **Note**: Use a recommended Microsoft Foundry region. Model availability may vary by region.
 
     > **TIP**: \* Remember the Foundry resource name - you'll need it later!
 
@@ -251,7 +254,6 @@ Now you're ready to use Azure Speech to implement text translation.
    # Configure speech for synthesis of translations
    speech_cfg = speech_sdk.SpeechConfig(
         token_credential=credential, endpoint=foundry_endpoint)
-   audio_out_cfg = speech_sdk.audio.AudioOutputConfig(use_default_speaker=True)
    voices = {
         "fr": "fr-FR-HenriNeural",
         "es": "es-ES-ElviraNeural",

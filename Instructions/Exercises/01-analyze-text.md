@@ -5,6 +5,7 @@ lab:
     level: 300
     duration: 30
     islab: true
+    status: 'released'
 ---
 
 # Analyze Text
@@ -44,6 +45,8 @@ Microsoft Foundry uses projects to organize models, resources, data, and other a
     - **Subscription**: *Your Azure subscription*
     - **Resource group**: *Create or select a resource group*
     - **Region**: Select any available region
+
+    > **Note**: Use a recommended Microsoft Foundry region. Model availability may vary by region.
 
 1. Select **Create**. Wait for your project to be created.
 1. On the home page for your project, note that the API key, project endpoint, and OpenAI endpoint are displayed here.
